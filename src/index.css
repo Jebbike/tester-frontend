@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav {
+  background-color: #0dcaf0;
+}
+
+.test-container {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 5vh;
+}
+.answer-wrapper {
+  display: flex;
+  column-gap: 10px;
+}
+.answer {
+  width: 14%!important;
+  height: 24vh;
+}
+.question-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
+.result-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  row-gap: 5vh;
+}
+.result-container form {
+  display: flex;
+  flex-flow: column wrap;
+}
