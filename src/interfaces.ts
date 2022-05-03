@@ -1,12 +1,26 @@
 export interface IAnswer {
     id: number
-    color: string
+    red: number
+    green: number
+    blue: number
+}
+
+export interface ITest {
+    id: number
+    questions: string[]
+    answers: IAnswer[]
 }
 
 export interface ITestState {
-    questions: string[]
+    test: ITest | null
+
     currentQuestion: number
-    answerColors: IAnswer[]
     answers: number[]
     complete: boolean
   }
+
+export interface ISaveResult {
+    email: string
+    shareAnswers: boolean
+    answers: number[]
+}

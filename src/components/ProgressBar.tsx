@@ -1,9 +1,9 @@
 interface ProgressBarProps {
-    steps: number
+    steps: number | undefined
     currentStep: number
 }
 
-export const ProgressBar: React.FunctionComponent<ProgressBarProps> = ({ steps, currentStep }) => {
+export const ProgressBar: React.FunctionComponent<ProgressBarProps> = ({ steps = 0, currentStep }) => {
     const progress = (100 * currentStep) / steps
 
     return (
